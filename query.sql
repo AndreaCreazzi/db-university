@@ -57,9 +57,9 @@ WHERE `phone` IS NULL;
 
 -- 1. Contare quanti iscritti ci sono stati ogni anno
 
-SELECT COUNT(`enrolment_date`) as `iscritti` 
+SELECT YEAR(`enrolment_date`) as `anno` , COUNT(`id`) 
 FROM `students`
-GROUP BY YEAR(`enrolment_date`);
+GROUP BY `anno`;
 
 -- 2. Contare gli insegnanti che hanno l'ufficio nello stesso edificio
 
