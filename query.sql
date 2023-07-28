@@ -42,7 +42,9 @@ WHERE `name` LIKE '% Magistrale %'
 
 -- 7. Da quanti dipartimenti è composta l'università? (12)
 
-
+SELECT * 
+FROM `departments`
+LIMIT 12;
 
 -- 8. Quanti sono gli insegnanti che non hanno un numero di telefono? (50)
 
