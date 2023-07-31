@@ -97,7 +97,11 @@ WHERE DEP.`name` = 'Dipartimento di Neuroscienze';
 
 -- 3. Selezionare tutti i corsi in cui insegna Fulvio Amato (id=44)
 
-
+SELECT T.`surname` as `insegnante`, C.`name` as `corso` 
+FROM `courses` as C
+JOIN `course_teacher` as CT ON C.`id` = CT.`course_id`
+JOIN `teachers` as T ON T.`id` = CT.`teacher_id`
+WHERE T.`id` = 44;
 
 -- 4. Selezionare tutti gli studenti con i dati relativi al corso di laurea a cui sono iscritti e il
 -- relativo dipartimento, in ordine alfabetico per cognome e nome
