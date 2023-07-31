@@ -1,4 +1,4 @@
--- SELECT
+--! SELECT
 
 -- 1. Selezionare tutti gli studenti nati nel 1990 (160)
 
@@ -52,7 +52,7 @@ FROM `teachers`
 WHERE `phone` IS NULL;
 
 
--- GROUP BY
+--! GROUP BY
 
 -- 1. Contare quanti iscritti ci sono stati ogni anno
 
@@ -79,7 +79,7 @@ FROM `degrees`
 GROUP BY `department_id`;
 
 
--- JOIN
+--! JOIN
 
 -- 1. Selezionare tutti gli studenti iscritti al Corso di Laurea in Economia
 
